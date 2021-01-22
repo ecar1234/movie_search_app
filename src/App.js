@@ -9,7 +9,7 @@ function App() {
   return (
     <div>
       <Switch>
-        <Route exact path="/" >
+        <Route exact path="/movie_search_app" >
           <Home />
         </Route>
         <Route path="/movie" >
