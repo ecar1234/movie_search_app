@@ -1,7 +1,7 @@
 import React from 'react';
 import propTypes from 'prop-types'
 import "./Movies.css"
-import { Link, Route, Switch } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Movie({ year, title, summary, poster, genres}) {
     return (
@@ -21,8 +21,8 @@ function Movie({ year, title, summary, poster, genres}) {
                         </li>
                     ))}
                 </ul>
-                <span className="movie_summary">{summary.slice(0, 180)}...</span>
-                <Link to={`/movie/${title}`} >[더 보기]</Link>
+                <span className="movie_summary">{summary.slice(0, 160)}...</span>
+                <Link to={`/movie/${title}`} ><span className="open_view">[더 보기]</span></Link>
            </div>
         </div>
     );

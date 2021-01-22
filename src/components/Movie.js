@@ -1,11 +1,12 @@
 import React from 'react';
+import './Movie.css'
 
-function Movie(props) {
+const Movie = () => {
     return (
         <div>
             hello
         </div>
     );
-}
+};
 
 export default Movie;
