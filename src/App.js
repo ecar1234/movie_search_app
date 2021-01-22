@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { Component } from 'react';
-import Movie from './Movie'
+import Movies from './components/Movies'
+import Nav from './components/Nav'
 import './App.css'
 
 
@@ -23,7 +24,7 @@ class App extends Component {
 
   render() {
     const { isLoading, movies } = this.state;
-    return (
+    return (  
       <section className="container">
         {isLoading ? (
         <div className="loader">
@@ -33,16 +34,21 @@ class App extends Component {
         </div> 
         ) : (
         <div>
+          <nav className="nav_container">
+            <Nav />
+          </nav>
+          
           <div className="search_input_wrap">
             <span>영화 검색 : </span>
             <input className="search_input"/>
             <button className="search_button" autoFocus>Search</button>
           </div>
+
           <div className="movies">
             {movies.map(movie => (
-            <Movie 
+            <Movies 
               key={movie.id} 
-              id={movie.id} 
+              id={movie.id}
               year={movie.year} 
               title={movie.title} 
               summary={movie.summary} 
