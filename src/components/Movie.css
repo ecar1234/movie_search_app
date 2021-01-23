@@ -21,6 +21,7 @@
     width: 100%;
     max-width: 220px;
     padding-right: 10px;
+    box-shadow: 0 30px 60px -12px rgba(50,50,93,0.25);
 }
 .choose_movie_data {
     width: 80%;
