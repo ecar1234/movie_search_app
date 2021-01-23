@@ -6,7 +6,7 @@ function Nav() {
     return (
         <div className="nav_wrap">
             <div className="home">
-                <Link to="/" >
+                <Link to="/movie_search_app" >
                     HOME    
                 </Link> 
             </div>

@@ -1,10 +1,6 @@
 import axios from 'axios';
 import React, { Component } from 'react';
-import { Route } from 'react-router-dom'
 import Movies from './Movies'
-import Nav from './Nav'
-import Movie from './Movie'
-import './Nav.css'
 import './Home.css'
 
 
@@ -38,10 +34,6 @@ class Home extends Component {
             </div> 
         ) : (
         <div>
-            <nav>
-                <Nav />
-            </nav>
-                  
             <div className="search_input_wrap">
                 <span>영화 검색 : </span>
                 <input className="search_input"/>
@@ -61,9 +53,6 @@ class Home extends Component {
                 />
             ))}
             </div>
-            <Route path="/movie" >
-                <Movie />
-            </Route>
         </div>
         )}
         </div>

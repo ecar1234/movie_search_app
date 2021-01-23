@@ -1,12 +1,14 @@
 import React from 'react';
 import './Movie.css'
 
-const Movie = () => {
+function Movie(props) {
+    console.log(props)
     return (
-        <div>
+       
+        <div className="choose">
             hello
         </div>
     );
-};
+}
 
 export default Movie;
