@@ -13,12 +13,8 @@ function App() {
         <Nav />
       </nav>  
       <Switch>
-        <Route exact path="/movie_search_app" >
-          <Home />
-        </Route>
-        <Route path="/movie/:title" >
-          <Movie />
-        </Route>
+        <Route exact path="/movie_search_app" component={Home} />
+        <Route path="/movie/:title" component={Movie} />
       </Switch>
       
     </div>

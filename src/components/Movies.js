@@ -30,7 +30,7 @@ function Movie({ id, year, title, summary, poster, genres}) {
                             </li>
                         ))}
                     </ul>
-                    <span className="movie_summary">{summary.slice(0, 160)}...</span>
+                    <span className="movie_summary">{summary.slice(0, 120)}...</span>
                     <span className="open_view">[더 보기]</span>
                 </div>
             </div>

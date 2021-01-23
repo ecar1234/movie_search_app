@@ -1,5 +1,49 @@
-.choose {
+.choose_container {
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 50px;
+    padding-top: 110px;
+    width: 80%;
+}
+.choose_movie {
+    width: 80%;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-radius: 5px;
+    box-shadow: 0 30px 60px -12px rgba(50,50,93,0.25);
+}
+.choose_movie img {
+    width: 100%;
+    max-width: 220px;
+    padding-right: 10px;
+}
+.choose_movie_data {
+    width: 80%;
+    height: 80%;
+    padding-left: 10px;
+}
+.choose_movie_title {
+    margin-top: 5px;
+    font-size: 24px;
+    color: #2c2c2c;
+}
+.choose_movie_year {
+    margin: 0;
+    padding-bottom: 10px;
+    font-size: larger;
+}
+.choose_movie_genres {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0 0 12px;    
+}
+.choose_movie_genres li {
+    font-size: small;
+    margin-right: 10px;
 }
